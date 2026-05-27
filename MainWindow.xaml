@@ -1,0 +1,131 @@
+﻿<Window x:Class="UchebPract2022.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UchebPract2022"
+        mc:Ignorable="d"
+        Title="Products" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <!-- верх-->
+            <RowDefinition Height="auto"/>
+            <!-- поиск -->
+            <RowDefinition Height="auto"/>
+            <!-- надпись -->
+            <RowDefinition Height="*"/>
+            <!-- под кнопку и продукты -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Fill="#ABCFCE " Grid.RowSpan="4" Grid.Column="0"/>
+        <Rectangle Fill="#ABCFCE " Grid.Row="0" Grid.Column="1"/>
+
+        <!-- под поиск фильтр и тд-->
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <!-- поиск -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Поиск" VerticalAlignment="Center" Margin="10,0" FontSize="14"/>
+                    <TextBox x:Name="SearchBox" TextChanged="FilterProducts" Width="400" Height="30" VerticalContentAlignment="Center"/>
+                </StackPanel>
+                <!-- фильтр по цене -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Border BorderThickness="1" Height="30">
+                        <ComboBox x:Name="SortFilter" SelectionChanged="FilterProducts" VerticalContentAlignment="Center">
+                            <ComboBoxItem Content="По умолчанию"/>
+                            <ComboBoxItem Content="По возрастанию"/>
+                            <ComboBoxItem Content="По убыванию"/>
+                        </ComboBox>
+                    </Border>
+                </StackPanel>
+                <!-- выбор типа товара -->
+                <Border Grid.Column="2" BorderBrush="#CCCCCC" BorderThickness="1" Background="White" Height="30">
+                    <ComboBox x:Name="TypeFilter" SelectionChanged="FilterProducts" BorderThickness="0" MinWidth="180" IsEditable="True" IsReadOnly="True"
+                    Text="{Binding SelectedItem, RelativeSource={RelativeSource Self}}"/>
+                </Border>
+            </Grid>
+        </StackPanel>
+
+        <!-- вывод продуктов -->
+        <ScrollViewer Grid.Row="3" Grid.Column="1">
+            <ItemsControl Name="ProductList">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel ItemWidth="250" ItemHeight="Auto" Orientation="Horizontal"/>
+                        <!-- размер карточки товара -->
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="7" Background="{Binding Background}" MouseLeftButtonDown="ProductCard_MouseDoubleClick" Margin="10" Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <!-- для категории и скидки-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!-- для названия-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!-- для состава-->
+                                    <RowDefinition Height="*"/>
+                                    <!-- для картинки-->
+                                    <RowDefinition Height="Auto"/>
+                                    <!-- для цены-->
+                                </Grid.RowDefinitions>
+                                <!-- категория и скидка-->
+                                <Grid Grid.Row="0" Margin="0,0,0,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Grid.Column="0" VerticalAlignment="Top"/>
+                                    <TextBlock Margin="10, 5,5,10" Grid.Column="1" VerticalAlignment="Top">
+                                    <Run Text="{Binding DiscountProcent}"/>
+                                    <Run Text="%"/>
+                                    </TextBlock>
+                                </Grid>
+                                <!-- название-->
+                                <TextBlock Text="{Binding ProductName}" Grid.Row="1" Margin="0,5"/>
+                                <!-- состав-->
+                                <TextBlock Grid.Row="2" TextWrapping="Wrap" Margin="0,5">
+                                    <Run Text="Состав:"/>
+                                    <Run Text="{Binding Composition}"/>
+                                </TextBlock>
+                                <!-- картинка-->
+                                <Image Source="{Binding Image, StringFormat='/{0}'}" Grid.Row="3" Stretch="Uniform" Height="120" Margin="5"/>
+                                <!-- цена -->
+                                <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="5, 0, 0, 0">
+                                    <TextBlock Text="Цена:"/>
+                                    <TextBlock Text="{Binding Price}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- конпка добавить -->
+        <StackPanel x:Name="AdminPanel" Grid.Row="3" Grid.Column="0">
+            <Button Content="Добавить" Click="AddProduct_Click" Margin="5"/>
+        </StackPanel>
+
+        <!-- ФИО -->
+        <TextBlock x:Name="UserNameText" Text="{Binding Users.FullName}"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10"/>
+        <TextBlock Text="Продукция" FontSize="20" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <!-- иконка -->
+        <Image Source="/images/IconVe.png" Grid.Column="0" Grid.Row="0"/>
+        <!-- кнопки авторизации и выхода -->
+        <Button x:Name="AutorizationButton" Content="Войти" Click="AutorizationButton_Click" Grid.Row="3" Grid.Column="0" VerticalAlignment="Bottom" Margin="5"/>
+        <Button x:Name="LogOutButton" Content="Выйти" Click="LogOutButton_Click" Visibility="Hidden" Grid.Row="3" Grid.Column="0" VerticalAlignment="Bottom" Margin="5"/>
+    </Grid>
+</Window>

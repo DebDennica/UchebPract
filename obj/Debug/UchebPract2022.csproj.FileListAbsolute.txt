@@ -1,0 +1,53 @@
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.AssemblyReference.cache
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\Autorization.g.cs
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\MainWindow.g.cs
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\App.g.cs
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_Content.g.cs
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_MarkupCompile.cache
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_MarkupCompile.lref
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.exe.config
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.exe
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.pdb
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.dll
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.xml
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\App.baml
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\Autorization.baml
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\MainWindow.baml
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.g.resources
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.Properties.Resources.resources
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.GenerateResource.cache
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.CoreCompileInputs.cache
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPra.53995D7D.Up2Date
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.exe
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.pdb
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.exe.config
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\ProductEditWindow.g.cs
+C:\Users\Alina\source\repos\UchebPract2022\UchebPract2022\obj\Debug\ProductEditWindow.baml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.exe.config
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.exe
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\UchebPract2022.pdb
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.dll
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.xml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\Autorization.g.cs
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\ProductEditWindow.g.cs
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\App.g.cs
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_Content.g.cs
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_MarkupCompile.cache
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022_MarkupCompile.lref
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\App.baml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\Autorization.baml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\ProductEditWindow.baml
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.g.resources
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.Properties.Resources.resources
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.GenerateResource.cache
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPra.53995D7D.Up2Date
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.exe
+C:\Users\student\Desktop\Вариант 7\UchebPract2022\UchebPract2022\obj\Debug\UchebPract2022.pdb
